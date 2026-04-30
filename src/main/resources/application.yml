@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/southseax
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+serial:
+  devices:
+    - device-id: hdx-reader-1  # 串口1唯一标识（必填，不可重复）
+      port-name: COM8          # 串口1端口号（Windows：COMx，Linux：/dev/ttyUSBx）
+      baud-rate: 9600          # 波特率（默认9600）
+      data-bits: 8             # 数据位（默认8）
+      stop-bits: 1             # 停止位（默认1）
+      parity: 2                # 校验位（0=无校验，1=奇校验，2=偶校验）
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8080
+
+# 通义千问AI配置
