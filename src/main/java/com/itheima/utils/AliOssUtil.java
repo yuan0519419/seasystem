@@ -8,8 +8,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 public class AliOssUtil {
-    private static final String ACCESS_KEY_ID = "";
-    private static final String ACCESS_KEY_SECRET = "";
+
     private static final String BUCKET_NAME = "big-event-s1eeep";
     public static String uploadFile(String objectName, InputStream in) throws Exception {
 

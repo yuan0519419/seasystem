@@ -26,3 +26,8 @@ server:
   port: 8080
 
 # 通义千问AI配置
+
+
+# 永久Token配置
+app:
+  permanent-token: tmall-skill-2026-seasystem-token
